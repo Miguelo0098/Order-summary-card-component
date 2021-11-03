@@ -1,0 +1,19 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+.background {
+  background-color: var(--pale-blue);
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 376px) {
+  .background {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
