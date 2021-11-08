@@ -3,6 +3,7 @@
   --very-pale-blue: hsl(225, 100%, 98%);
   --bright-blue: hsl(245, 75%, 52%);
   --desaturated-blue: hsl(224, 23%, 55%);
+  --desaturated-blue-translucid: hsla(224, 23%, 55%, 50%);
   --dark-blue: hsl(223, 47%, 23%);
 }
 
@@ -24,14 +25,17 @@ body {
   background-image: url("../images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  width: 100%;
 }
 
 .content {
+  flex-grow: 1;
+  display: grid;
+  place-items: center;
+  width: 100%;
   padding: 0 1em 0 1em;
 }
 
@@ -43,6 +47,7 @@ body {
   max-width: 400px;
   overflow: hidden;
   background-color: white;
+  box-shadow: var(--desaturated-blue-translucid) 0px 1em 2em -1em;
 }
 
 .summary__illustration {
@@ -125,6 +130,7 @@ body {
 .summary__primary {
   font-weight: 900;
   margin-bottom: 1em;
+  box-shadow: var(--desaturated-blue) 0px 1em 2em -1em;
 }
 
 .summary__primary:hover {
@@ -140,6 +146,10 @@ body {
 
 .summary__secondary:hover {
   color: var(--dark-blue);
+}
+
+.attribution {
+  flex-shrink: 0;
 }
 
 @media screen and (min-width: 450px) {
