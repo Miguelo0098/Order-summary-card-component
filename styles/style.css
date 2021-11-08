@@ -6,14 +6,148 @@
   --dark-blue: hsl(223, 47%, 23%);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
 .background {
   background-color: var(--pale-blue);
   background-image: url("../images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  overflow-y: auto;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  width: 100%;
 }
 
-@media screen and (min-width: 376px) {
+.content {
+  padding: 0 1em 0 1em;
+}
+
+.card {
+  border-radius: 1em;
+}
+
+.summary {
+  max-width: 400px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.summary__illustration {
+  width: 100%;
+}
+
+.summary__wrapper {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summary__title {
+  text-align: center;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+
+.summary__description {
+  text-align: center;
+  font-weight: normal;
+  padding: 0 1em 0 1em;
+  color: var(--desaturated-blue);
+}
+
+.summary__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--very-pale-blue);
+  padding: 0 1em 0 1em;
+  margin-bottom: 1em;
+}
+
+.music-icon {
+  background-image: url("../images/icon-music.svg");
+  background-position: center;
+  background-color: var(--pale-blue);
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+}
+
+.plan__wrapper {
+  flex: 1 0 auto;
+  padding-left: 1em;
+}
+
+.plan__name {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+.plan__price {
+  margin-top: 0.5em;
+  color: var(--desaturated-blue);
+}
+
+.plan__change {
+  color: var(--bright-blue);
+}
+
+.plan__change:hover {
+  opacity: 80%;
+  text-decoration: none;
+}
+
+.button {
+  padding: 1em 0 1em 0;
+  border: none;
+  border-radius: 1em;
+  background-color: var(--bright-blue);
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.summary__primary {
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+.summary__primary:hover {
+  opacity: 80%;
+}
+
+.summary__secondary {
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  margin-bottom: 1em;
+}
+
+.summary__secondary:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (min-width: 450px) {
   .background {
     background-image: url("../images/pattern-background-desktop.svg");
+  }
+
+  .summary__wrapper {
+    padding: 1em 2em;
   }
 }
