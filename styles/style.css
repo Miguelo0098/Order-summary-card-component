@@ -16,8 +16,25 @@ html {
   font-size: 16px;
 }
 
-body {
-  margin: 0;
+h1 {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+button {
+  padding: 1em 0 1em 0;
+  border: none;
+  border-radius: 1em;
+  font-size: 1em;
+  font-family: "Red Hat Display", sans-serif;
+  cursor: pointer;
+  font-weight: 900;
 }
 
 .background {
@@ -63,23 +80,22 @@ body {
 
 .summary__title {
   text-align: center;
-  font-weight: bold;
+  padding: 0.75em 0 0 0;
   color: var(--dark-blue);
 }
 
 .summary__description {
   text-align: center;
-  font-weight: normal;
-  padding: 0 1em 0 1em;
+  padding: 1em;
   color: var(--desaturated-blue);
 }
 
-.summary__plan {
+.plan {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--very-pale-blue);
-  padding: 0 1em 0 1em;
+  padding: 1em;
   margin-bottom: 1em;
 }
 
@@ -98,17 +114,19 @@ body {
 }
 
 .plan__name {
-  margin-bottom: 0.5em;
-  font-weight: bold;
+  font-weight: 900;
   color: var(--dark-blue);
 }
+
 .plan__price {
-  margin-top: 0.5em;
   color: var(--desaturated-blue);
 }
 
 .plan__change {
   color: var(--bright-blue);
+  font-weight: bold;
+  text-decoration-thickness: 1px;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .plan__change:hover {
@@ -116,35 +134,26 @@ body {
   text-decoration: none;
 }
 
-.button {
-  padding: 1em 0 1em 0;
-  border: none;
-  border-radius: 1em;
+.summary__button--primary {
   background-color: var(--bright-blue);
   color: white;
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-.summary__primary {
-  font-weight: 900;
   margin-bottom: 1em;
   box-shadow: var(--desaturated-blue) 0px 1em 2em -1em;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.summary__primary:hover {
+.summary__button--primary:hover {
   opacity: 80%;
 }
 
-.summary__secondary {
-  font-weight: bold;
+.summary__button--secondary {
   background-color: transparent;
   color: var(--desaturated-blue);
   margin-bottom: 1em;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.summary__secondary:hover {
+.summary__button--secondary:hover {
   color: var(--dark-blue);
 }
 
