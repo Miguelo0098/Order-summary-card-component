@@ -159,6 +159,7 @@ button {
 
 .attribution {
   flex-shrink: 0;
+  padding-bottom: 1em;
 }
 
 @media screen and (min-width: 450px) {
