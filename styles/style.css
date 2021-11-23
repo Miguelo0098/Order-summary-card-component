@@ -95,8 +95,8 @@ button {
   align-items: center;
   justify-content: space-between;
   background-color: var(--very-pale-blue);
-  padding: 1em;
-  margin-bottom: 1em;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .music-icon {
