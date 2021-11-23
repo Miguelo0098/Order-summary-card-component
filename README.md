@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Order summary card component](https://miguelo0098.github.io/Order-summary-card-component-/)
 
 ## My process
 
