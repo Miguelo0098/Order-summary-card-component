@@ -124,6 +124,7 @@ p {
 }
 
 .summary__button {
+  text-decoration: none;
   text-align: center;
   padding: 1em 0 1em 0;
   border: none;
