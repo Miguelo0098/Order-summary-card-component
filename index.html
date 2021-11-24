@@ -36,9 +36,10 @@
     <main class="content">
       <div class="card summary">
         <img
-          class="summary__illustration"
+          class="summary__hero"
           src="./images/illustration-hero.svg"
-          alt="Illustration of a girl listening music on her phone"
+          alt=""
+          aria-hidden="true"
         />
         <div class="summary__wrapper">
           <h1 class="summary__title">Order Summary</h1>
@@ -49,13 +50,13 @@
           <div class="card plan">
             <i class="music-icon"></i>
             <div class="plan__wrapper">
-              <p class="plan__name">Annual Plan</p>
+              <h2 class="plan__name">Annual Plan</h2>
               <p class="plan__price">$59.99/year</p>
             </div>
             <a class="plan__change" href="#">Change</a>
           </div>
-          <button class="summary__button--primary">Proceed to Payment</button>
-          <button class="summary__button--secondary">Cancel Order</button>
+          <a class="summary__button primary" href="#">Proceed to Payment</a>
+          <a class="summary__button secondary" href="#">Cancel Order</a>
         </div>
       </div>
     </main>

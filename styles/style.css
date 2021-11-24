@@ -27,16 +27,6 @@ p {
   line-height: 1.5em;
 }
 
-button {
-  padding: 1em 0 1em 0;
-  border: none;
-  border-radius: 1em;
-  font-size: 1em;
-  font-family: "Red Hat Display", sans-serif;
-  cursor: pointer;
-  font-weight: 900;
-}
-
 .background {
   background-color: var(--pale-blue);
   background-image: url("../images/pattern-background-mobile.svg");
@@ -45,7 +35,6 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
 }
 
 .content {
@@ -53,7 +42,7 @@ button {
   display: grid;
   place-items: center;
   width: 100%;
-  padding: 0 1em 0 1em;
+  padding: 1em;
 }
 
 .card {
@@ -67,7 +56,7 @@ button {
   box-shadow: var(--desaturated-blue-translucid) 0px 1em 2em -1em;
 }
 
-.summary__illustration {
+.summary__hero {
   width: 100%;
 }
 
@@ -134,7 +123,18 @@ button {
   text-decoration: none;
 }
 
-.summary__button--primary {
+.summary__button {
+  text-align: center;
+  padding: 1em 0 1em 0;
+  border: none;
+  border-radius: 1em;
+  font-size: 1em;
+  font-family: "Red Hat Display", sans-serif;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.summary__button.primary {
   background-color: var(--bright-blue);
   color: white;
   margin-bottom: 1em;
@@ -142,18 +142,18 @@ button {
   transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.summary__button--primary:hover {
+.summary__button.primary:hover {
   opacity: 80%;
 }
 
-.summary__button--secondary {
+.summary__button.secondary {
   background-color: transparent;
   color: var(--desaturated-blue);
   margin-bottom: 1em;
   transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.summary__button--secondary:hover {
+.summary__button.secondary:hover {
   color: var(--dark-blue);
 }
 
